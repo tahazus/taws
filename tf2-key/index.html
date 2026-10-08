@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
-    <title>خرید کلخرید کلید TF2 | ارزان و تحویل سریع | TAWS</title>
+    <title>خرید کلید TF2 | قیمت TF2 Key و تحویل سریع | TAWS</title>
 
     <meta name="description" content="خرید کلید TF2 (Mann Co. Supply Crate Key) با تحویل سریع از طریق Steam Trade Offer. مشاهده قیمت روز کلید TF2 و ثبت سفارش از TAWS." >
 
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large">
 
     <link rel="canonical" href="https://tawss.ir/tf2-key/" >
 
@@ -51,6 +51,11 @@
     <meta name="theme-color" content="#08090d" >
 
 
+    <!-- Performance: preconnect & preload (LCP) -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="image" href="/assets/images/key.webp" fetchpriority="high">
+
     <!-- Favicon -->
     <link rel="icon" href="/assets/images/taha.png" type="image/png" >
 
@@ -62,49 +67,200 @@
 
     <link rel="stylesheet" href="/assets/style/style.css" >
 
+    <!-- Animations -->
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .float-chip { animation: float 5s ease-in-out infinite; }
+        .float-chip-delay { animation: float 6.5s ease-in-out 0.9s infinite; }
+        @media (prefers-reduced-motion: reduce) {
+            .float-chip, .float-chip-delay { animation: none; }
+        }
+    </style>
 
-    <!-- Product Structured Data -->
+
+    <!-- Structured Data (Product + Breadcrumb + FAQ + Organization) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Product",
-
-        "name": "Mann Co. Supply Crate Key",
-
-        "alternateName": "TF2 Key",
-
-        "description": "خرید کلید TF2 یا Mann Co. Supply Crate Key با تحویل سریع از طریق Steam Trade Offer.",
-
-        "image": [
-            "https://tawss.ir/assets/images/tf2key.webp"
-        ],
-
-        "brand": {
-            "@type": "Brand",
-            "name": "Team Fortress 2"
-        },
-
-        "offers": {
-            "@type": "Offer",
-
-            "url": "https://tawss.ir/tf2-key/",
-
-            "priceCurrency": "IRR",
-
-            "price": "465000",
-
-            "availability": "https://schema.org/InStock",
-
-            "itemCondition": "https://schema.org/NewCondition"
-        }
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://tawss.ir/#organization",
+                "name": "TAWS",
+                "url": "https://tawss.ir/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://tawss.ir/assets/images/taha.png"
+                },
+                "sameAs": [
+                    "https://t.me/TahazuS"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://tawss.ir/#website",
+                "url": "https://tawss.ir/",
+                "name": "TAWS",
+                "inLanguage": "fa-IR",
+                "publisher": { "@id": "https://tawss.ir/#organization" }
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://tawss.ir/tf2-key/#webpage",
+                "url": "https://tawss.ir/tf2-key/",
+                "name": "خرید کلید TF2 | قیمت TF2 Key و تحویل سریع | TAWS",
+                "description": "خرید کلید TF2 (Mann Co. Supply Crate Key) با تحویل سریع از طریق Steam Trade Offer. مشاهده قیمت روز کلید TF2 و ثبت سفارش از TAWS.",
+                "inLanguage": "fa-IR",
+                "isPartOf": { "@id": "https://tawss.ir/#website" },
+                "breadcrumb": { "@id": "https://tawss.ir/tf2-key/#breadcrumb" },
+                "about": { "@id": "https://tawss.ir/tf2-key/#product" }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://tawss.ir/tf2-key/#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "خانه",
+                        "item": "https://tawss.ir/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "کلید TF2",
+                        "item": "https://tawss.ir/tf2-key/"
+                    }
+                ]
+            },
+            {
+                "@type": "Product",
+                "@id": "https://tawss.ir/tf2-key/#product",
+                "name": "Mann Co. Supply Crate Key",
+                "alternateName": "TF2 Key",
+                "description": "خرید کلید TF2 یا Mann Co. Supply Crate Key با تحویل سریع از طریق Steam Trade Offer.",
+                "image": [
+                    "https://tawss.ir/assets/images/tf2key.webp"
+                ],
+                "sku": "TAWS-TF2-KEY",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "Team Fortress 2"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://tawss.ir/tf2-key/",
+                    "priceCurrency": "IRR",
+                    "price": "4600000",
+                    "availability": "https://schema.org/InStock",
+                    "itemCondition": "https://schema.org/NewCondition",
+                    "seller": { "@id": "https://tawss.ir/#organization" }
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://tawss.ir/tf2-key/#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "کلید TF2 چگونه ارسال می‌شود؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "پس از ثبت سفارش، کلید از طریق Steam Trade Offer برای حساب Steam شما ارسال می‌شود. کافی است هنگام ثبت سفارش، لینک ترید اکانت خود را ارسال کنید تا کلید بدون نیاز به اطلاعات ورود، مستقیماً به انبار شما تحویل داده شود."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "تحویل سفارش چقدر زمان می‌برد؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "معمولاً بین ۱ تا ۵ دقیقه، مگر در شرایط خاص یا ساعات شلوغ. در صورت بروز هرگونه تأخیر، پشتیبانی TAWS وضعیت سفارش شما را به‌صورت لحظه‌ای اطلاع‌رسانی می‌کند."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "آیا این محصول محدودیت ریجن دارد؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "خیر، TF2 Key به‌صورت Global ارائه می‌شود و برای تمام حساب‌های Steam قابل استفاده است."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "اگر مشکلی در سفارش پیش بیاید چه می‌شود؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "تیم پشتیبانی TAWS سفارش شما را بررسی کرده و تا رفع کامل مشکل همراهتان خواهد بود. تمامی سفارش‌ها با تضمین ارسال انجام می‌شوند."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "حداقل و حداکثر تعداد سفارش چقدر است؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "حتی سفارش یک کلید نیز پذیرفته می‌شود. برای خریدهای عمده می‌توانید از طریق تلگرام با پشتیبانی هماهنگ کنید و از قیمت بهتری بهره‌مند شوید."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "قیمت کلید TF2 چگونه تعیین می‌شود؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "قیمت بر اساس نرخ روز بازار تعیین و به‌صورت مستقیم در همین صفحه نمایش داده می‌شود؛ بنابراین قیمت لحظه ثبت سفارش، ملاک محاسبه نهایی است."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "چطور می‌توانم کلیدهای TF2 خود را به TAWS بفروشم؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "اگر کلید TF2 برای فروش دارید، کافی است از طریق تلگرام تعداد آن‌ها را اعلام کنید. قیمت بر اساس نرخ روز بازار اعلام شده و پس از تأیید شما و انجام ترید، مبلغ به‌سرعت پرداخت می‌شود."
+                        }
+                    }
+                ]
+            }
+        ]
     }
     </script>
 
 </head>
 <body class="bg-[#000000] font-[Arad] min-h-screen">
 
+<!-- Skip Link (Accessibility) -->
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:right-4 focus:top-4 focus:z-[100] focus:rounded-xl focus:bg-violet-600 focus:px-5 focus:py-3 focus:font-bold focus:text-white">
+    پرش به محتوای اصلی
+</a>
+
 <!-- header -->
 <div id="header"></div>
+
+<main id="main">
+
+<!-- Breadcrumb -->
+<nav aria-label="مسیر صفحه" class="mx-auto max-w-7xl px-5 pt-6 sm:px-6">
+
+    <ol class="flex items-center gap-2 text-sm text-zinc-500">
+
+        <li>
+            <a href="https://tawss.ir/" class="transition hover:text-zinc-300">
+                خانه
+            </a>
+        </li>
+
+        <li aria-hidden="true">
+            <i class="fa-solid fa-angle-left text-[10px] text-zinc-600"></i>
+        </li>
+
+        <li aria-current="page" class="text-zinc-400">
+            کلید TF2
+        </li>
+
+    </ol>
+
+</nav>
 
 <!-- ================= Hero ================= -->
 <section class="relative isolate overflow-hidden border-b border-white/5 py-16 sm:py-20 lg:py-24" aria-labelledby="product-title">
@@ -175,6 +331,17 @@
 
                 </div>
 
+                <!-- Floating badges -->
+                <div class="float-chip absolute right-2 top-10 hidden items-center gap-2 rounded-xl border border-white/10 bg-black/60 px-3.5 py-2.5 text-xs font-medium text-zinc-300 shadow-lg shadow-black/40 backdrop-blur-md sm:flex" aria-hidden="true">
+                    <i class="fa-brands fa-steam text-sky-400"></i>
+                    Steam Ready
+                </div>
+
+                <div class="float-chip-delay absolute bottom-16 left-0 hidden items-center gap-2 rounded-xl border border-white/10 bg-black/60 px-3.5 py-2.5 text-xs font-medium text-zinc-300 shadow-lg shadow-black/40 backdrop-blur-md sm:flex" aria-hidden="true">
+                    <i class="fa-solid fa-globe text-violet-400"></i>
+                    Global
+                </div>
+
             </div>
 
 
@@ -183,20 +350,29 @@
 
                 <!-- Badge -->
                 <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-violet-500/20 bg-violet-500/[0.08] px-4 py-2 text-sm font-medium text-violet-300" >
-                    <i class="fa-solid fa-bolt text-violet-400"></i>
-                    Fast Trade
+                    <i class="fa-solid fa-stopwatch text-violet-400" aria-hidden="true"></i>
+                    تحویل ۱ تا ۵ دقیقه‌ای
                 </div>
 
 
                 <!-- Heading -->
                 <h1 id="product-title" class="text-4xl font-black leading-[1.2] tracking-tight text-white sm:text-5xl lg:text-[3.5rem]" >
-                    کلید TF2
+                    <span class="bg-gradient-to-l from-violet-300 via-violet-200 to-white bg-clip-text text-transparent">
+                        کلید TF2
+                    </span>
                 </h1>
+
+                <p class="mt-4 text-sm font-medium tracking-[0.25em] text-violet-300/70" >
+                    Mann Co. Supply Crate Key
+                </p>
 
 
                 <!-- Description -->
                 <p class="mt-7 max-w-xl text-base leading-8 text-zinc-400 sm:text-lg" >
-                    کلید TF2 یا Mann Co. Supply Crate Key یکی از آیتم‌های قابل معامله در استیم مارکت است که برای شارژ کردن حساب  و خرید بازی استفاده می شود. در تاز می‌توانید کلید TF2 را برای استفاده در استیم خریداری کرده و پس از ثبت سفارش، آن را از طریق لینک ترید که ثبت کردید دریافت کنید. 
+                    پرتقاضاترین آیتم قابل‌معامله در استیم؛ هم برای باز کردن
+                    جعبه‌ها و هم به‌عنوان واحد ارزش در تریدهای روزانه. در
+                    تاز، سفارش شما بدون واسطه و از طریق Steam Trade Offer
+                    به حساب‌تان تحویل داده می‌شود.
                 </p>
 
 
@@ -260,7 +436,7 @@
 
                     <div class="flex items-center gap-2">
                         <i class="fa-solid fa-circle-check text-green-400"></i>
-                        تحویل سریع
+                        معامله بدون واسطه
                     </div>
 
                     <div class="flex items-center gap-2">
@@ -280,20 +456,21 @@
 
 <!-- ================= About Product ================= -->
 
-<section class="py-24">
+<section id="about" class="py-24" aria-labelledby="about-title">
 
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="mx-auto max-w-7xl px-5 sm:px-6">
 
         <!-- Section Title -->
 
         <div class="text-center mb-16">
 
-            <span class="text-violet-400 font-semibold">
+            <span class="mb-6 inline-flex items-center gap-2 rounded-full border border-violet-500/20 bg-violet-500/[0.08] px-4 py-2 text-sm font-medium text-violet-300">
+                <i class="fa-solid fa-circle-info text-violet-400" aria-hidden="true"></i>
                 درباره محصول
             </span>
 
-            <h2 class="text-4xl font-black text-white mt-4">
-                TF2 Key چیست؟
+            <h2 id="about-title" class="text-3xl font-black tracking-tight text-white sm:text-4xl">
+                TF2 Key چیست و چه کاربردی دارد؟
             </h2>
 
             <p class="text-zinc-400 max-w-3xl mx-auto mt-6 leading-8">
@@ -310,241 +487,76 @@
 
         <!-- Content -->
 
-        <div class="grid lg:grid-cols-2 gap-10">
+        <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
 
-            <!-- Left -->
+            <!-- Stable Value -->
 
-            <div class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8">
+            <div class="group rounded-3xl border border-white/10 bg-white/[0.035] p-8 transition duration-300 hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-lg hover:shadow-violet-600/10">
 
-                <h3 class="text-2xl font-bold text-white mb-6">
-                    چرا TF2 Key؟
-                </h3>
-
-                <div class="space-y-6">
-
-                    <div class="flex gap-4">
-
-                        <div
-                            class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center text-xl">
-                            💰
-                        </div>
-
-                        <div>
-
-                            <h4 class="text-white font-semibold">
-                                ارزش پایدار
-                            </h4>
-
-                            <p class="text-zinc-400 mt-2 leading-7">
-
-                                TF2 Key یکی از پایدارترین آیتم‌های قابل
-                                معامله در Steam است و توسط بسیاری از
-                                معامله‌گران به عنوان واحد پولی استفاده
-                                می‌شود.
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="flex gap-4">
-
-                        <div
-                            class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center text-xl">
-                            🔄
-                        </div>
-
-                        <div>
-
-                            <h4 class="text-white font-semibold">
-                                معامله آسان
-                            </h4>
-
-                            <p class="text-zinc-400 mt-2 leading-7">
-
-                                خرید و فروش TF2 Key بین کاربران Steam
-                                بسیار رایج است و تقریباً در تمام سایت‌های
-                                معاملاتی پذیرفته می‌شود.
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="flex gap-4">
-
-                        <div
-                            class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center text-xl">
-                            🎁
-                        </div>
-
-                        <div>
-
-                            <h4 class="text-white font-semibold">
-                                شارژ کردن Wallet
-                            </h4>
-
-                            <p class="text-zinc-400 mt-2 leading-7">
-
-                                با استفاده از TF2 Key می‌توانید
-                               Wallet استیم خود را شارژ کرده
-                               و بازی های مورده علاقه تان را بخرید
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
+                <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-violet-500/20 bg-gradient-to-br from-violet-500/20 to-violet-500/5 text-xl text-violet-300 transition duration-300 group-hover:scale-110" aria-hidden="true">
+                    <i class="fa-solid fa-coins"></i>
                 </div>
 
-            </div>
-
-            <!-- Right -->
-
-            <div class="grid gap-6">
-
-                <div
-                    class="rounded-3xl border border-white/10 bg-gradient-to-br from-violet-500/10 to-transparent p-8">
-
-                    <div class="text-5xl mb-5">
-                        ⚡
-                    </div>
-
-                    <h3 class="text-2xl font-bold text-white mb-4">
-                        تحویل سریع
-                    </h3>
-
-                    <p class="text-zinc-400 leading-8">
-
-                        سفارش شما معمولاً بین ۱ تا ۵ دقیقه از طریق
-                        Steam Trade Offer ارسال می‌شود.
-
-                    </p>
-
-                </div>
-
-                <div
-                    class="rounded-3xl border border-white/10 bg-gradient-to-br from-violet-500/10 to-transparent p-8">
-
-                    <div class="text-5xl mb-5">
-                        🔒
-                    </div>
-
-                    <h3 class="text-2xl font-bold text-white mb-4">
-                        خرید مطمئن
-                    </h3>
-
-                    <p class="text-zinc-400 leading-8">
-
-                        تمامی سفارش‌ها با تضمین ارسال انجام می‌شوند و
-                        در صورت بروز هرگونه مشکل، تیم پشتیبانی همراه شماست.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= Use Cases ================= -->
-
-<section class="pb-24">
-
-    <div class="max-w-7xl mx-auto px-6">
-
-        <div class="text-center mb-14">
-
-            <h2 class="text-4xl font-black text-white">
-                کاربردهای TF2 Key
-            </h2>
-
-            <p class="text-zinc-400 mt-5">
-                بیش از یک کلید؛ یک دارایی ارزشمند در اکوسیستم Steam
-            </p>
-
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-
-            <div
-                class="group rounded-3xl border border-white/10 bg-white/5 p-8 hover:border-violet-500/50 transition duration-300">
-
-                <div
-                    class="w-16 h-16 rounded-2xl bg-violet-500/10 flex items-center justify-center text-3xl group-hover:scale-110 transition">
-
-                    🎁
-
-                </div>
-
-                <h3 class="text-white text-xl font-bold mt-6">
-
-                    شارژ کردن Wallet
-
+                <h3 class="text-white text-xl font-bold">
+                    ارزش پایدار
                 </h3>
 
                 <p class="text-zinc-400 mt-4 leading-7">
-
-                   با فروش TF2 Key در مارکت استیم
-                   Wallet خود را در کمتر از چند ثانیه شارژ کنید
-
+                    TF2 Key به دلیل عرضه کنترل‌شده، ارزش خود را حفظ می‌کند و معامله‌گران آن را واحد پولی Steam می‌دانند.
                 </p>
 
             </div>
 
-            <div
-                class="group rounded-3xl border border-white/10 bg-white/5 p-8 hover:border-violet-500/50 transition duration-300">
+            <!-- Easy Trade -->
 
-                <div
-                    class="w-16 h-16 rounded-2xl bg-violet-500/10 flex items-center justify-center text-3xl group-hover:scale-110 transition">
+            <div class="group rounded-3xl border border-white/10 bg-white/[0.035] p-8 transition duration-300 hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-lg hover:shadow-violet-600/10">
 
-                    💱
-
+                <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-violet-500/20 bg-gradient-to-br from-violet-500/20 to-violet-500/5 text-xl text-violet-300 transition duration-300 group-hover:scale-110" aria-hidden="true">
+                    <i class="fa-solid fa-right-left"></i>
                 </div>
 
-                <h3 class="text-white text-xl font-bold mt-6">
-
-                    معامله آیتم‌ها
-
+                <h3 class="text-white text-xl font-bold">
+                    معامله آسان
                 </h3>
 
                 <p class="text-zinc-400 mt-4 leading-7">
-
-                    بسیاری از معاملات Steam با TF2 Key انجام می‌شوند و
-                    این آیتم به عنوان واحد ارزش شناخته می‌شود.
-
+                    خرید و فروش TF2 Key بین کاربران بسیار رایج است و تقریباً در تمام پلتفرم‌های معاملاتی پذیرفته می‌شود.
                 </p>
 
             </div>
 
-            <div
-                class="group rounded-3xl border border-white/10 bg-white/5 p-8 hover:border-violet-500/50 transition duration-300">
+            <!-- Wallet Charge -->
 
-                <div
-                    class="w-16 h-16 rounded-2xl bg-violet-500/10 flex items-center justify-center text-3xl group-hover:scale-110 transition">
+            <div class="group rounded-3xl border border-white/10 bg-white/[0.035] p-8 transition duration-300 hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-lg hover:shadow-violet-600/10">
 
-                    📈
-
+                <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-violet-500/20 bg-gradient-to-br from-violet-500/20 to-violet-500/5 text-xl text-violet-300 transition duration-300 group-hover:scale-110" aria-hidden="true">
+                    <i class="fa-solid fa-wallet"></i>
                 </div>
 
-                <h3 class="text-white text-xl font-bold mt-6">
+                <h3 class="text-white text-xl font-bold">
+                    شارژ Wallet
+                </h3>
 
+                <p class="text-zinc-400 mt-4 leading-7">
+                    با فروش TF2 Key در مارکت استیم، کیف پول خود را شارژ کرده و بازی‌های مورد علاقه‌تان را بخرید.
+                </p>
+
+            </div>
+
+            <!-- Trading Capital -->
+
+            <div class="group rounded-3xl border border-white/10 bg-white/[0.035] p-8 transition duration-300 hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-lg hover:shadow-violet-600/10">
+
+                <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-violet-500/20 bg-gradient-to-br from-violet-500/20 to-violet-500/5 text-xl text-violet-300 transition duration-300 group-hover:scale-110" aria-hidden="true">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <h3 class="text-white text-xl font-bold">
                     سرمایه برای ترید
-
                 </h3>
 
                 <p class="text-zinc-400 mt-4 leading-7">
-
-                    بسیاری از تریدرهای Steam برای حفظ ارزش سرمایه خود
-                    از TF2 Key استفاده می‌کنند.
-
+                    بسیاری از تریدرهای Steam برای حفظ ارزش سرمایه خود، دارایی‌شان را به TF2 Key تبدیل می‌کنند.
                 </p>
 
             </div>
@@ -557,17 +569,18 @@
 
 <!-- ================= Why Choose TAWS ================= -->
 
-<section class="py-24">
+<section id="why-taws" class="py-24" aria-labelledby="why-taws-title">
 
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="mx-auto max-w-7xl px-5 sm:px-6">
 
         <div class="text-center mb-16">
 
-            <span class="text-violet-400 font-semibold">
+            <span class="mb-6 inline-flex items-center gap-2 rounded-full border border-violet-500/20 bg-violet-500/[0.08] px-4 py-2 text-sm font-medium text-violet-300">
+                <i class="fa-solid fa-medal text-violet-400" aria-hidden="true"></i>
                 چرا TAWS؟
             </span>
 
-            <h2 class="text-4xl font-black text-white mt-4">
+            <h2 id="why-taws-title" class="text-3xl font-black tracking-tight text-white sm:text-4xl">
                 چرا کاربران TAWS را انتخاب می‌کنند؟
             </h2>
 
@@ -580,8 +593,10 @@
 
         <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
 
-            <div class="rounded-3xl border border-white/10 bg-white/5 p-8 hover:border-violet-500/40 hover:-translate-y-1 transition">
-                <div class="text-4xl mb-5">⚡</div>
+            <div class="group rounded-3xl border border-white/10 bg-white/[0.035] p-8 transition duration-300 hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-lg hover:shadow-violet-600/10">
+                <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-violet-500/20 bg-gradient-to-br from-violet-500/20 to-violet-500/5 text-xl text-violet-300 transition duration-300 group-hover:scale-110" aria-hidden="true">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
                 <h3 class="text-white text-xl font-bold mb-3">
                     تحویل سریع
                 </h3>
@@ -590,8 +605,10 @@
                 </p>
             </div>
 
-            <div class="rounded-3xl border border-white/10 bg-white/5 p-8 hover:border-violet-500/40 hover:-translate-y-1 transition">
-                <div class="text-4xl mb-5">💰</div>
+            <div class="group rounded-3xl border border-white/10 bg-white/[0.035] p-8 transition duration-300 hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-lg hover:shadow-violet-600/10">
+                <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-violet-500/20 bg-gradient-to-br from-violet-500/20 to-violet-500/5 text-xl text-violet-300 transition duration-300 group-hover:scale-110" aria-hidden="true">
+                    <i class="fa-solid fa-tags"></i>
+                </div>
                 <h3 class="text-white text-xl font-bold mb-3">
                     قیمت رقابتی
                 </h3>
@@ -600,8 +617,10 @@
                 </p>
             </div>
 
-            <div class="rounded-3xl border border-white/10 bg-white/5 p-8 hover:border-violet-500/40 hover:-translate-y-1 transition">
-                <div class="text-4xl mb-5">🔒</div>
+            <div class="group rounded-3xl border border-white/10 bg-white/[0.035] p-8 transition duration-300 hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-lg hover:shadow-violet-600/10">
+                <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-violet-500/20 bg-gradient-to-br from-violet-500/20 to-violet-500/5 text-xl text-violet-300 transition duration-300 group-hover:scale-110" aria-hidden="true">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
                 <h3 class="text-white text-xl font-bold mb-3">
                     خرید مطمئن
                 </h3>
@@ -610,8 +629,10 @@
                 </p>
             </div>
 
-            <div class="rounded-3xl border border-white/10 bg-white/5 p-8 hover:border-violet-500/40 hover:-translate-y-1 transition">
-                <div class="text-4xl mb-5">💬</div>
+            <div class="group rounded-3xl border border-white/10 bg-white/[0.035] p-8 transition duration-300 hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-lg hover:shadow-violet-600/10">
+                <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-violet-500/20 bg-gradient-to-br from-violet-500/20 to-violet-500/5 text-xl text-violet-300 transition duration-300 group-hover:scale-110" aria-hidden="true">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
                 <h3 class="text-white text-xl font-bold mb-3">
                     پشتیبانی
                 </h3>
@@ -620,8 +641,10 @@
                 </p>
             </div>
 
-            <div class="rounded-3xl border border-white/10 bg-white/5 p-8 hover:border-violet-500/40 hover:-translate-y-1 transition">
-                <div class="text-4xl mb-5">🌍</div>
+            <div class="group rounded-3xl border border-white/10 bg-white/[0.035] p-8 transition duration-300 hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-lg hover:shadow-violet-600/10">
+                <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-violet-500/20 bg-gradient-to-br from-violet-500/20 to-violet-500/5 text-xl text-violet-300 transition duration-300 group-hover:scale-110" aria-hidden="true">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
                 <h3 class="text-white text-xl font-bold mb-3">
                     محصولات Global
                 </h3>
@@ -630,8 +653,10 @@
                 </p>
             </div>
 
-            <div class="rounded-3xl border border-white/10 bg-white/5 p-8 hover:border-violet-500/40 hover:-translate-y-1 transition">
-                <div class="text-4xl mb-5">⭐</div>
+            <div class="group rounded-3xl border border-white/10 bg-white/[0.035] p-8 transition duration-300 hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-lg hover:shadow-violet-600/10">
+                <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-violet-500/20 bg-gradient-to-br from-violet-500/20 to-violet-500/5 text-xl text-violet-300 transition duration-300 group-hover:scale-110" aria-hidden="true">
+                    <i class="fa-solid fa-star"></i>
+                </div>
                 <h3 class="text-white text-xl font-bold mb-3">
                     رضایت مشتری
                 </h3>
@@ -646,15 +671,203 @@
 
 </section>
 
-<!-- ================= FAQ ================= -->
+<!-- ================= How to Buy ================= -->
 
-<section class="pb-24">
+<section id="how-to-buy" class="pb-24" aria-labelledby="how-to-buy-title">
 
-    <div class="max-w-5xl mx-auto px-6">
+    <div class="mx-auto max-w-7xl px-5 sm:px-6">
 
         <div class="text-center mb-14">
 
-            <h2 class="text-4xl font-black text-white">
+            <span class="mb-6 inline-flex items-center gap-2 rounded-full border border-violet-500/20 bg-violet-500/[0.08] px-4 py-2 text-sm font-medium text-violet-300">
+                <i class="fa-solid fa-route text-violet-400" aria-hidden="true"></i>
+                راهنمای خرید
+            </span>
+
+            <h2 id="how-to-buy-title" class="text-3xl font-black tracking-tight text-white sm:text-4xl">
+                نحوه خرید کلید TF2
+            </h2>
+
+            <p class="text-zinc-400 mt-5">
+                در سه مرحله ساده، کلید را در حساب Steam خود تحویل بگیرید
+            </p>
+
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+
+            <div class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.035] p-8 transition duration-300 hover:border-violet-500/40 hover:shadow-lg hover:shadow-violet-600/10">
+
+                <span class="pointer-events-none absolute left-6 top-4 text-6xl font-black text-white/[0.05]" aria-hidden="true">۱</span>
+
+                <div class="flex h-14 w-14 items-center justify-center rounded-2xl border border-violet-500/20 bg-gradient-to-br from-violet-500/20 to-violet-500/5 text-xl text-violet-300 transition duration-300 group-hover:scale-110" aria-hidden="true">
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+
+                <h3 class="text-white text-xl font-bold mt-6">
+                    ثبت سفارش در تلگرام
+                </h3>
+
+                <p class="text-zinc-400 mt-4 leading-7">
+                    روی دکمه خرید بزنید و در پیام‌رسان تلگرام، تعداد کلیدهای مورد نیاز خود را به تیم TAWS اعلام کنید.
+                </p>
+
+            </div>
+
+            <div class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.035] p-8 transition duration-300 hover:border-violet-500/40 hover:shadow-lg hover:shadow-violet-600/10">
+
+                <span class="pointer-events-none absolute left-6 top-4 text-6xl font-black text-white/[0.05]" aria-hidden="true">۲</span>
+
+                <div class="flex h-14 w-14 items-center justify-center rounded-2xl border border-violet-500/20 bg-gradient-to-br from-violet-500/20 to-violet-500/5 text-xl text-violet-300 transition duration-300 group-hover:scale-110" aria-hidden="true">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+
+                <h3 class="text-white text-xl font-bold mt-6">
+                    پرداخت و تأیید
+                </h3>
+
+                <p class="text-zinc-400 mt-4 leading-7">
+                    مبلغ سفارش را پرداخت کنید و لینک ترید (Trade URL) حساب Steam خود را ارسال کنید.
+                </p>
+
+            </div>
+
+            <div class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.035] p-8 transition duration-300 hover:border-violet-500/40 hover:shadow-lg hover:shadow-violet-600/10">
+
+                <span class="pointer-events-none absolute left-6 top-4 text-6xl font-black text-white/[0.05]" aria-hidden="true">۳</span>
+
+                <div class="flex h-14 w-14 items-center justify-center rounded-2xl border border-violet-500/20 bg-gradient-to-br from-violet-500/20 to-violet-500/5 text-xl text-violet-300 transition duration-300 group-hover:scale-110" aria-hidden="true">
+                    <i class="fa-solid fa-box-open"></i>
+                </div>
+
+                <h3 class="text-white text-xl font-bold mt-6">
+                    دریافت کلید
+                </h3>
+
+                <p class="text-zinc-400 mt-4 leading-7">
+                    کلید معمولاً بین ۱ تا ۵ دقیقه پس از تأیید، از طریق Steam Trade Offer به حساب شما ارسال می‌شود.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Sell to TAWS ================= -->
+
+<section id="sell" class="pb-24" aria-labelledby="sell-title">
+
+    <div class="mx-auto max-w-7xl px-5 sm:px-6">
+
+        <div class="relative overflow-hidden rounded-[32px] border border-white/10 bg-gradient-to-l from-violet-600/15 via-violet-500/[0.07] to-transparent p-8 sm:p-12">
+
+            <div class="absolute -right-24 -top-24 w-72 h-72 rounded-full bg-violet-600/15 blur-[120px]" aria-hidden="true"></div>
+            <div class="absolute -left-20 bottom-0 w-64 h-64 rounded-full bg-emerald-500/10 blur-[100px]" aria-hidden="true"></div>
+
+            <div class="relative grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
+
+                <!-- Text -->
+                <div>
+
+                    <span class="mb-6 inline-flex items-center gap-2 rounded-full border border-violet-500/20 bg-violet-500/[0.08] px-4 py-2 text-sm font-medium text-violet-300">
+                        <i class="fa-solid fa-hand-holding-dollar text-violet-400" aria-hidden="true"></i>
+                        فروش به TAWS
+                    </span>
+
+                    <h2 id="sell-title" class="text-3xl font-black tracking-tight text-white sm:text-4xl">
+                        کلید TF2 دارید؟ ما می‌خریم!
+                    </h2>
+
+                    <p class="mt-5 max-w-xl leading-8 text-zinc-400">
+
+                        اگر کلیدهای TF2 اضافه دارید و قصد فروش دارید، تاز
+                        آن‌ها را با نرخ روز بازار و پرداخت سریع خریداری
+                        می‌کند؛ بدون مذاکره و بدون معطلی.
+
+                    </p>
+
+                    <div class="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm text-zinc-300">
+
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-green-400"></i>
+                            نرخ منصفانه روز بازار
+                        </div>
+
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-green-400"></i>
+                            پرداخت سریع پس از تأیید
+                        </div>
+
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-green-400"></i>
+                            بدون محدودیت تعداد
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Action Card -->
+                <div class="rounded-3xl border border-white/10 bg-black/40 p-8 backdrop-blur-xl">
+
+                    <div class="flex items-start gap-4">
+
+                        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-violet-500/20 bg-gradient-to-br from-violet-500/20 to-violet-500/5 text-xl text-violet-300" aria-hidden="true">
+                            <i class="fa-solid fa-money-bill-trend-up"></i>
+                        </div>
+
+                        <div>
+
+                            <h3 class="text-xl font-bold text-white">
+                                فروش آنی و مطمئن
+                            </h3>
+
+                            <p class="mt-3 text-sm leading-7 text-zinc-400">
+                                تعداد کلیدها و لینک ترید خود را در تلگرام ارسال کنید؛ پس از تأیید، مبلغ به‌سرعت به حساب شما واریز می‌شود.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <a href="https://t.me/TahazuS"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="mt-7 inline-flex w-full items-center justify-center gap-3 rounded-xl border border-violet-500/40 bg-violet-500/10 px-7 py-4 font-bold text-violet-200 transition duration-300 hover:-translate-y-0.5 hover:border-violet-400 hover:bg-violet-500/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#000000]"
+                       aria-label="فروش کلید TF2 به TAWS از طریق تلگرام">
+
+                        <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+                        فروش کلید TF2
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FAQ ================= -->
+
+<section id="faq" class="pb-24" aria-labelledby="faq-title">
+
+    <div class="mx-auto max-w-5xl px-5 sm:px-6">
+
+        <div class="text-center mb-14">
+
+            <span class="mb-6 inline-flex items-center gap-2 rounded-full border border-violet-500/20 bg-violet-500/[0.08] px-4 py-2 text-sm font-medium text-violet-300">
+                <i class="fa-solid fa-circle-question text-violet-400" aria-hidden="true"></i>
+                سوالات پرتکرار
+            </span>
+
+            <h2 id="faq-title" class="text-3xl font-black tracking-tight text-white sm:text-4xl">
                 سوالات متداول
             </h2>
 
@@ -666,43 +879,101 @@
 
         <div class="space-y-5">
 
-            <details class="group rounded-2xl border border-white/10 bg-white/5 p-6">
-                <summary class="cursor-pointer text-white font-semibold">
-                    TF2 Key چگونه ارسال می‌شود؟
+            <details class="group rounded-2xl border border-white/10 bg-white/[0.035] px-6 py-5 transition duration-300 open:border-violet-500/30 open:bg-violet-500/[0.04] hover:border-white/20">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
+                    <span class="font-semibold text-white">
+                        کلید TF2 چگونه ارسال می‌شود؟
+                    </span>
+                    <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-violet-500/20 bg-violet-500/10 text-violet-400 transition duration-300 group-open:rotate-180" aria-hidden="true">
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </span>
                 </summary>
-
-                <p class="text-zinc-400 mt-5 leading-7">
-                    پس از ثبت سفارش، کلید از طریق Steam Trade Offer برای شما ارسال خواهد شد.
+                <p class="mt-4 border-t border-white/5 pt-4 leading-7 text-zinc-400">
+                    پس از ثبت سفارش، کلید از طریق Steam Trade Offer برای حساب Steam شما ارسال می‌شود. کافی است هنگام ثبت سفارش، لینک ترید اکانت خود را ارسال کنید تا کلید بدون نیاز به اطلاعات ورود، مستقیماً به انبار شما تحویل داده شود.
                 </p>
             </details>
 
-            <details class="group rounded-2xl border border-white/10 bg-white/5 p-6">
-                <summary class="cursor-pointer text-white font-semibold">
-                    تحویل سفارش چقدر زمان می‌برد؟
+            <details class="group rounded-2xl border border-white/10 bg-white/[0.035] px-6 py-5 transition duration-300 open:border-violet-500/30 open:bg-violet-500/[0.04] hover:border-white/20">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
+                    <span class="font-semibold text-white">
+                        تحویل سفارش چقدر زمان می‌برد؟
+                    </span>
+                    <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-violet-500/20 bg-violet-500/10 text-violet-400 transition duration-300 group-open:rotate-180" aria-hidden="true">
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </span>
                 </summary>
-
-                <p class="text-zinc-400 mt-5 leading-7">
-                    معمولاً بین ۱ تا ۵ دقیقه، مگر در شرایط خاص یا ساعات شلوغ.
+                <p class="mt-4 border-t border-white/5 pt-4 leading-7 text-zinc-400">
+                    معمولاً بین ۱ تا ۵ دقیقه، مگر در شرایط خاص یا ساعات شلوغ. در صورت بروز هرگونه تأخیر، پشتیبانی TAWS وضعیت سفارش شما را به‌صورت لحظه‌ای اطلاع‌رسانی می‌کند.
                 </p>
             </details>
 
-            <details class="group rounded-2xl border border-white/10 bg-white/5 p-6">
-                <summary class="cursor-pointer text-white font-semibold">
-                    آیا این محصول محدودیت ریجن دارد؟
+            <details class="group rounded-2xl border border-white/10 bg-white/[0.035] px-6 py-5 transition duration-300 open:border-violet-500/30 open:bg-violet-500/[0.04] hover:border-white/20">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
+                    <span class="font-semibold text-white">
+                        آیا این محصول محدودیت ریجن دارد؟
+                    </span>
+                    <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-violet-500/20 bg-violet-500/10 text-violet-400 transition duration-300 group-open:rotate-180" aria-hidden="true">
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </span>
                 </summary>
-
-                <p class="text-zinc-400 mt-5 leading-7">
-                    خیر، TF2 Key به صورت Global ارائه می‌شود.
+                <p class="mt-4 border-t border-white/5 pt-4 leading-7 text-zinc-400">
+                    خیر، TF2 Key به‌صورت Global ارائه می‌شود و برای تمام حساب‌های Steam قابل استفاده است.
                 </p>
             </details>
 
-            <details class="group rounded-2xl border border-white/10 bg-white/5 p-6">
-                <summary class="cursor-pointer text-white font-semibold">
-                    اگر مشکلی در سفارش پیش بیاید چه می‌شود؟
+            <details class="group rounded-2xl border border-white/10 bg-white/[0.035] px-6 py-5 transition duration-300 open:border-violet-500/30 open:bg-violet-500/[0.04] hover:border-white/20">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
+                    <span class="font-semibold text-white">
+                        اگر مشکلی در سفارش پیش بیاید چه می‌شود؟
+                    </span>
+                    <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-violet-500/20 bg-violet-500/10 text-violet-400 transition duration-300 group-open:rotate-180" aria-hidden="true">
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </span>
                 </summary>
+                <p class="mt-4 border-t border-white/5 pt-4 leading-7 text-zinc-400">
+                    تیم پشتیبانی TAWS سفارش شما را بررسی کرده و تا رفع کامل مشکل همراهتان خواهد بود. تمامی سفارش‌ها با تضمین ارسال انجام می‌شوند.
+                </p>
+            </details>
 
-                <p class="text-zinc-400 mt-5 leading-7">
-                    تیم پشتیبانی TAWS سفارش شما را بررسی کرده و تا رفع مشکل همراهتان خواهد بود.
+            <details class="group rounded-2xl border border-white/10 bg-white/[0.035] px-6 py-5 transition duration-300 open:border-violet-500/30 open:bg-violet-500/[0.04] hover:border-white/20">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
+                    <span class="font-semibold text-white">
+                        حداقل و حداکثر تعداد سفارش چقدر است؟
+                    </span>
+                    <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-violet-500/20 bg-violet-500/10 text-violet-400 transition duration-300 group-open:rotate-180" aria-hidden="true">
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </span>
+                </summary>
+                <p class="mt-4 border-t border-white/5 pt-4 leading-7 text-zinc-400">
+                    حتی سفارش یک کلید نیز پذیرفته می‌شود. برای خریدهای عمده می‌توانید از طریق تلگرام با پشتیبانی هماهنگ کنید و از قیمت بهتری بهره‌مند شوید.
+                </p>
+            </details>
+
+            <details class="group rounded-2xl border border-white/10 bg-white/[0.035] px-6 py-5 transition duration-300 open:border-violet-500/30 open:bg-violet-500/[0.04] hover:border-white/20">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
+                    <span class="font-semibold text-white">
+                        قیمت کلید TF2 چگونه تعیین می‌شود؟
+                    </span>
+                    <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-violet-500/20 bg-violet-500/10 text-violet-400 transition duration-300 group-open:rotate-180" aria-hidden="true">
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </span>
+                </summary>
+                <p class="mt-4 border-t border-white/5 pt-4 leading-7 text-zinc-400">
+                    قیمت بر اساس نرخ روز بازار تعیین و به‌صورت مستقیم در همین صفحه نمایش داده می‌شود؛ بنابراین قیمت لحظه ثبت سفارش، ملاک محاسبه نهایی است.
+                </p>
+            </details>
+
+            <details class="group rounded-2xl border border-white/10 bg-white/[0.035] px-6 py-5 transition duration-300 open:border-violet-500/30 open:bg-violet-500/[0.04] hover:border-white/20">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
+                    <span class="font-semibold text-white">
+                        چطور می‌توانم کلیدهای TF2 خود را به TAWS بفروشم؟
+                    </span>
+                    <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-violet-500/20 bg-violet-500/10 text-violet-400 transition duration-300 group-open:rotate-180" aria-hidden="true">
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </span>
+                </summary>
+                <p class="mt-4 border-t border-white/5 pt-4 leading-7 text-zinc-400">
+                    اگر کلید TF2 برای فروش دارید، کافی است از طریق تلگرام تعداد آن‌ها را اعلام کنید. قیمت بر اساس نرخ روز بازار اعلام شده و پس از تأیید شما و انجام ترید، مبلغ به‌سرعت پرداخت می‌شود.
                 </p>
             </details>
 
@@ -714,9 +985,9 @@
 
 <!-- ================= CTA ================= -->
 
-<section class="pb-24">
+<section id="buy" class="pb-24" aria-labelledby="buy-title">
 
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="mx-auto max-w-7xl px-5 sm:px-6">
 
         <div class="relative overflow-hidden rounded-[32px] border border-violet-500/20 bg-gradient-to-r from-violet-600/20 via-violet-500/10 to-transparent p-12">
 
@@ -727,25 +998,45 @@
 
                 <div>
 
-                    <h2 class="text-4xl font-black text-white">
-                        آماده خرید TF2 Key هستید؟
+                    <h2 id="buy-title" class="text-3xl font-black tracking-tight text-white sm:text-4xl">
+                        آماده خرید یا فروش TF2 Key هستید؟
                     </h2>
 
                     <p class="text-zinc-300 mt-5 leading-8 max-w-xl">
 
-                        همین حالا سفارش خود را ثبت کنید و در کوتاه‌ترین
-                        زمان ممکن TF2 Key را در حساب Steam خود دریافت کنید.
+                        چه بخواهید کلید TF2 بخرید و چه بخواهید بفروشید،
+                        کافی است در تلگرام پیام بدهید؛ تیم TAWS با نرخ
+                        روز بازار پاسخ‌گوی شماست.
 
                     </p>
 
                 </div>
 
-                <a href="https://t.me/TahazuS"
-                   class="px-10 py-5 rounded-2xl bg-violet-600 hover:bg-violet-500 transition text-white font-bold text-lg shadow-xl shadow-violet-600/30">
+                <div class="flex shrink-0 flex-col gap-4 sm:flex-row">
 
-                    خرید TF2 Key
+                    <a href="https://t.me/TahazuS"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center gap-3 rounded-2xl bg-violet-600 px-9 py-5 text-lg font-bold text-white shadow-xl shadow-violet-600/30 transition duration-300 hover:-translate-y-0.5 hover:bg-violet-500 hover:shadow-violet-500/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#000000]"
+                       aria-label="خرید کلید TF2 از طریق تلگرام TAWS">
 
-                </a>
+                        <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+                        خرید TF2 Key
+
+                    </a>
+
+                    <a href="https://t.me/TahazuS"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center gap-3 rounded-2xl border border-violet-500/40 bg-white/[0.04] px-9 py-5 text-lg font-bold text-violet-200 transition duration-300 hover:-translate-y-0.5 hover:border-violet-400 hover:bg-violet-500/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#000000]"
+                       aria-label="فروش کلید TF2 به TAWS از طریق تلگرام">
+
+                        <i class="fa-solid fa-hand-holding-dollar" aria-hidden="true"></i>
+                        فروش به ما
+
+                    </a>
+
+                </div>
 
             </div>
 
@@ -756,12 +1047,14 @@
 </section>
 
 
+</main>
+
 <!-- Footer -->
 <div id="footer-norm"></div>
 
 <button
     id="backToTop"
-    aria-label="Back to top"
+    aria-label="بازگشت به بالای صفحه"
     class="fixed bottom-8 right-8 z-50 w-14 h-14 rounded-2xl
            bg-violet-600 text-white shadow-lg shadow-violet-600/30
            hover:bg-violet-500 hover:scale-110
